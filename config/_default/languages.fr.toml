@@ -1,0 +1,23 @@
+
+disabled = false
+locale = "fr"
+label = "Français"
+weight = 2
+title = "Heading North"
+
+[params]
+  displayName = "FR"
+  isoCode = "fr"
+  rtl = false
+  dateFormat = "2 January 2006"
+  description = "Parcours homelab DevOps & Blue Team, construit en public."
+
+[params.author]
+  name = "Cédric VERVOORD"
+  image = "img/cedric.jpeg"
+  headline = "Administrateur systèmes DevOps en formation — cap sur Nord"
+  bio = "J'apprends le DevOps et la sécurité en public, une phase de homelab à la fois."
+  links = [
+    { github = "https://github.com/cedricVrvrd" },
+    { linkedin = "https://linkedin.com/in/cédric-vervoord-07940915b/" },
+  ]

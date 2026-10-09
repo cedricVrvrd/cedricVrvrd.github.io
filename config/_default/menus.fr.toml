@@ -9,7 +9,7 @@
   weight = 20
 
 [[main]]
-  name = "Resume"
+  name = "CV"
   pageRef = "cv"
   weight = 30
 
