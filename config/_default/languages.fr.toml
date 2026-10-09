@@ -15,7 +15,7 @@ title = "Heading North"
 [params.author]
   name = "Cédric VERVOORD"
   image = "img/cedric.jpeg"
-  headline = "Administrateur systèmes DevOps en formation — cap sur Nord"
+  headline = "Administrateur systèmes DevOps · cap sur le DevSecOps"
   bio = "J'apprends le DevOps et la sécurité en public, une phase de homelab à la fois."
   links = [
     { github = "https://github.com/cedricVrvrd" },

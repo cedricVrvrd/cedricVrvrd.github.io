@@ -10,7 +10,7 @@ showPagination: false
 
 ## Profil
 
-Administrateur systèmes DevOps en formation, je vise des postes SOC Analyst / Blue Team avec un profil DevSecOps. Objectif à moyen terme : travailler dans les pays nordiques.
+Administrateur systèmes DevOps, cap sur le DevSecOps, avec un intérêt marqué pour la détection et le travail de Blue Team. Objectif à moyen terme : travailler dans les pays nordiques.
 
 ## Formations et certifications
 

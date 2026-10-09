@@ -8,6 +8,5 @@ showAuthor: false
 showPagination: false
 ---
 
-Le meilleur moyen de me joindre est **LinkedIn**. Vous pouvez aussi suivre l'avancement du lab sur **GitHub**.
-
-Les liens se trouvent sur la page d'accueil et en bas de chaque article.
+Le meilleur moyen de me joindre est [LinkedIn](https://linkedin.com/in/cédric-vervoord-07940915b/). 
+Vous pouvez aussi suivre l'avancement du lab sur [GitHub](https://github.com/cedricVrvrd).

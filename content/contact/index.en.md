@@ -8,6 +8,5 @@ showAuthor: false
 showPagination: false
 ---
 
-The best way to reach me is through **LinkedIn**. You can also follow the lab's progress on **GitHub**.
-
-The links are on the home page and at the bottom of each article.
+The best way to reach me is through [LinkedIn](https://linkedin.com/in/cédric-vervoord-07940915b/). 
+You can also follow the lab's progress on [GitHub](https://github.com/cedricVrvrd).
