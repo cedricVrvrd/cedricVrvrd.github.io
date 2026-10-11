@@ -4,13 +4,18 @@
   weight = 10
 
 [[main]]
-  name = "Friday Fun Facts"
-  pageRef = "fun-facts"
+  name = "Resume"
+  pageRef = "cv"
+  weight = 15
+
+[[main]]
+  name = "Tech Watch"
+  pageRef = "tech-watch"
   weight = 20
 
 [[main]]
-  name = "Resume"
-  pageRef = "cv"
+  name = "Friday Fun Facts"
+  pageRef = "fun-facts"
   weight = 30
 
 [[main]]
