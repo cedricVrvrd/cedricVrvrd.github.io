@@ -10,14 +10,17 @@ showPagination: false
 
 ## Profile
 
-Systems and network administrator changing careers, heading for DevOps and DevSecOps. After more than twenty-five years in front-line jobs, including fifteen in passenger service and on-board safety on French railways, I turned my passion for IT and cybersecurity into my profession. I'm now building **Heading North Lab**, a complete infrastructure on my own Proxmox server, documented in public step by step.
+Systems and network technician with a web development background, now training in DevOps with a clear direction: DevSecOps.
 
-I bring the rigour of strictly applying safety and security procedures, composure in disrupted situations, and strong people skills. Long-term goal: working in the Nordic countries.
+I discovered cybersecurity during my web development training. It has since become both the common thread of my career change and a passion, which I practise regularly on training platforms such as TryHackMe and which led me to the eJPT. The TSSR qualification then gave me solid foundations in systems and networks; my DevOps Bachelor's is teaching me to automate, industrialise, and build security in from the start.
+
+From my professional background, I keep a habit that matters in this field: applying strict procedures, without exception, even when things go wrong. That's exactly what a production release, incident handling or a security policy requires.
+
+I'm now building **Heading North Lab**, a complete infrastructure on my own Proxmox server, documented in public step by step. Long-term goal: working in the Nordic countries.
 
 ## Education and certifications
 
 - **Bachelor's in DevOps Systems Administration** (French state-recognised qualification, EQF level 6) — Studi — *in progress*
-- **CCNA** — Cisco — *in progress*
 - **Systems and Network Technician (TSSR)** — French state-recognised professional qualification, EQF level 5 (two years of higher education) — Studi — October 2025 to August 2026
 - **Claude Academy: AI Fluency — Framework and Foundations** — Anthropic — October 2026 ([verify](https://academy.claude.com/verify/9a6ee1a3aeb28ecf479ba55612852193))
 - **eJPT v2** — eLearnSecurity Junior Penetration Tester — INE — August 2025, valid until August 2028 ([verify](https://certs.ine.com/6426b795-7347-43fe-adfd-cff56295d0d8))
@@ -35,7 +38,7 @@ I bring the rigour of strictly applying safety and security procedures, composur
 
 ## Projects
 
-- **[Heading North Lab](/labs/heading-north-lab/)** — rebuilding, automating and securing a fictional company's infrastructure on a Proxmox server, in 13 documented phases.
+- **[Heading North Lab](/heading-north-lab/)** — rebuilding, automating and securing a fictional company's infrastructure on a Proxmox server, in 13 documented phases.
 - **This website** — bilingual static site (Hugo), versioned on GitHub and deployed automatically by a GitHub Actions pipeline.
 
 ## Professional experience

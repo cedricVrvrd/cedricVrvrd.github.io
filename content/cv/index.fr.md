@@ -10,14 +10,16 @@ showPagination: false
 
 ## Profil
 
-Administrateur systèmes et réseaux en reconversion, cap sur le DevOps et le DevSecOps. Après plus de vingt-cinq ans de métiers de terrain, dont quinze au service commercial et à la sécurité à bord des trains, j'ai choisi de faire de ma passion pour l'informatique et la cybersécurité mon métier. Je construis aujourd'hui **Heading North Lab**, une infrastructure complète sur mon propre serveur Proxmox, documentée en public étape par étape.
+Technicien supérieur systèmes et réseaux, je viens du développement web et je me forme aujourd'hui au DevOps, avec un cap clair : le DevSecOps.
 
-J'apporte une rigueur forgée par l'application stricte de procédures de sûreté et de sécurité, du sang-froid en situation perturbée et une vraie aisance relationnelle. Objectif à moyen terme : travailler dans les pays nordiques.
+C'est pendant ma formation de développeur que j'ai découvert la cybersécurité. Elle est devenue à la fois le fil conducteur de ma reconversion et une passion, que je pratique régulièrement sur des plateformes d'entraînement comme TryHackMe et qui m'a mené jusqu'à l'eJPT. Le TSSR m'a ensuite donné des bases solides en systèmes et réseaux ; le Bachelor DevOps m'apprend à automatiser, à industrialiser, et à intégrer la sécurité dès la conception.
 
+De mon parcours professionnel, je garde un réflexe précieux dans ce métier : appliquer des procédures strictes, sans exception, y compris en situation perturbée. C'est exactement ce qu'exigent une mise en production, une gestion d'incident ou une politique de sécurité.
+
+Je construis aujourd'hui **Heading North Lab**, une infrastructure complète sur mon propre serveur Proxmox, documentée en public étape par étape. Objectif à moyen terme : travailler dans les pays nordiques.
 ## Formations et certifications
 
 - **Bachelor Administrateur Système DevOps** (titre RNCP niveau 6, Bac+3) — Studi — *en cours*
-- **CCNA** — Cisco — *en préparation*
 - **Titre professionnel TSSR** — Technicien Supérieur Systèmes et Réseaux (RNCP niveau 5, Bac+2) — Studi — formation d'octobre 2025 à août 2026
 - **Claude Academy : AI Fluency — Framework and Foundations** — Anthropic — octobre 2026 ([vérifier](https://academy.claude.com/verify/9a6ee1a3aeb28ecf479ba55612852193))
 - **eJPT v2** — eLearnSecurity Junior Penetration Tester — INE — août 2025, valide jusqu'en août 2028 ([vérifier](https://certs.ine.com/6426b795-7347-43fe-adfd-cff56295d0d8))
@@ -35,7 +37,7 @@ J'apporte une rigueur forgée par l'application stricte de procédures de sûret
 
 ## Projets
 
-- **[Heading North Lab](/fr/labs/heading-north-lab/)** — reconstruire, automatiser et sécuriser l'infrastructure d'une entreprise fictive sur un serveur Proxmox, en 13 phases documentées.
+- **[Heading North Lab](/fr/heading-north-lab/)** — reconstruire, automatiser et sécuriser l'infrastructure d'une entreprise fictive sur un serveur Proxmox, en 13 phases documentées.
 - **Ce site** — site statique bilingue (Hugo), versionné sur GitHub et déployé automatiquement par un pipeline GitHub Actions.
 
 ## Expérience professionnelle

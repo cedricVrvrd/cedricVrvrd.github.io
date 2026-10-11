@@ -1,22 +1,22 @@
 [[main]]
-  name = "Labs"
-  pageRef = "labs"
+  name = "Heading North Lab"
+  pageRef = "heading-north-lab"
   weight = 10
 
 [[main]]
   name = "CV"
   pageRef = "cv"
-  weight = 30
+  weight = 15
 
 [[main]]
   name = "Veille"
   pageRef = "tech-watch"
-  weight = 15
+  weight = 20
 
 [[main]]
   name = "Friday Fun Facts"
   pageRef = "fun-facts"
-  weight = 20
+  weight = 30
 
 
 [[main]]

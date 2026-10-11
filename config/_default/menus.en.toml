@@ -1,6 +1,6 @@
 [[main]]
-  name = "Labs"
-  pageRef = "labs"
+  name = "Heading North Lab"
+  pageRef = "heading-north-lab"
   weight = 10
 
 [[main]]
