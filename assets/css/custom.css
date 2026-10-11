@@ -1,0 +1,23 @@
+/* Heading North — accent doré à la place du bleu par défaut */
+:root {
+  --color-primary-50: 254, 249, 236;
+  --color-primary-100: 252, 240, 207;
+  --color-primary-200: 249, 224, 159;
+  --color-primary-300: 246, 207, 110;
+  --color-primary-400: 243, 194, 80;
+  --color-primary-500: 240, 185, 60;
+  --color-primary-600: 214, 155, 34;
+  --color-primary-700: 178, 124, 22;
+  --color-primary-800: 140, 97, 20;
+  --color-primary-900: 110, 76, 18;
+  --color-primary-950: 66, 45, 10;
+}
+
+/* Bouton en mode sombre : fond doré franc, texte bleu nuit pour la lisibilité */
+.dark a[class*="bg-primary"] {
+  background-color: rgb(var(--color-primary-500)) !important;
+  color: rgb(15, 23, 38) !important;
+}
+.dark a[class*="bg-primary"]:hover {
+  background-color: rgb(var(--color-primary-400)) !important;
+}
