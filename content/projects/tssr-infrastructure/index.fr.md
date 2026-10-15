@@ -3,7 +3,7 @@ title: "Infrastructure TSSR — Active Directory, GLPI et VLAN"
 description: "Épreuve pratique du Titre Professionnel TSSR : un domaine Windows, le DHCP, un serveur GLPI authentifié sur l'AD, la segmentation en VLAN, la sauvegarde des configurations et une GPO, montés de zéro."
 date: 2026-01-14
 draft: false
-weight: 80
+weight: 5
 summary: "L'épreuve pratique de mon titre systèmes et réseaux : un domaine Windows, GLPI authentifié sur Active Directory, du routage inter-VLAN et une GPO de démarrage."
 categories: ["Systèmes et réseaux"]
 tags: ["TSSR", "Active Directory", "GLPI", "Cisco", "GPO"]

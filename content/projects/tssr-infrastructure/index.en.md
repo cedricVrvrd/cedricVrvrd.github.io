@@ -3,7 +3,7 @@ title: "TSSR infrastructure — Active Directory, GLPI and VLANs"
 description: "Practical exam for the French TSSR diploma: a Windows domain, DHCP, a GLPI ticketing server authenticated against AD, VLAN segmentation, config backups and a GPO, built from scratch."
 date: 2026-01-14
 draft: false
-weight: 80
+weight: 5
 summary: "The practical exam of my systems and networks diploma: a Windows domain, GLPI authenticated against Active Directory, inter-VLAN routing and a startup GPO."
 categories: ["Systems and networks"]
 tags: ["TSSR", "Active Directory", "GLPI", "Cisco", "GPO"]
