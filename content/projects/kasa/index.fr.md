@@ -4,15 +4,19 @@ description: "Application de location de logements entre particuliers développ�
 date: 2022-11-26
 draft: false
 weight: 20
-summary: "Le dernier projet du parcours : une application React de location de logements, construite à partir de composants réutilisables."
-tags: ["Projets", "OpenClassrooms", "React"]
+summary: "Le dernier projet de ma formation de développeur : une application React de location de logements, construite à partir de composants réutilisables."
+categories: ["Développement web"]
+tags: ["OpenClassrooms", "React"]
+showTaxonomies: true
 ---
+
+*Projet de la formation Développeur Web d'OpenClassrooms, 2022.*
 
 **Une application de location de logements, découpée en composants réutilisables.**
 
 ## Le projet
 
-Kasa est une plateforme de location de logements entre particuliers. C'est le dernier projet du parcours : développer le front-end en **React** à partir d'une maquette, avec une page par logement générée à partir des données.
+Kasa est une plateforme de location de logements entre particuliers. C'est le dernier projet de la formation : développer le front-end en **React** à partir d'une maquette, avec une page par logement générée à partir des données.
 
 ## Ce que j'ai réalisé
 

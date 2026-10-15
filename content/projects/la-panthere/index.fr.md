@@ -5,8 +5,12 @@ date: 2022-08-11
 draft: false
 weight: 40
 summary: "Reprendre le site d'une agence web et le corriger : référencement, poids des pages, accessibilité, et retrait de techniques de référencement abusives."
-tags: ["Projets", "OpenClassrooms", "SEO", "Accessibilité"]
+categories: ["Développement web"]
+tags: ["OpenClassrooms", "SEO", "Accessibilité"]
+showTaxonomies: true
 ---
+
+*Projet de la formation Développeur Web d'OpenClassrooms, 2022.*
 
 **Pas de nouveau site ici : reprendre un site existant, trouver ce qui ne va pas, et le corriger.**
 

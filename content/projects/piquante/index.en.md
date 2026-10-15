@@ -4,9 +4,13 @@ description: "A Node.js / Express / MongoDB REST API for a hot sauce review app,
 date: 2022-11-26
 draft: false
 weight: 10
-summary: "The only back-end project of the path, and the closest to what I do today: a Node.js API where most of the work is about security."
-tags: ["Projects", "OpenClassrooms", "Node.js", "Security"]
+summary: "The only back-end project of my web developer training, and the closest to what I do today: a Node.js API where most of the work is about security."
+categories: ["Web development"]
+tags: ["OpenClassrooms", "Node.js", "Security"]
+showTaxonomies: true
 ---
+
+*Project from the OpenClassrooms Web Developer path, 2022.*
 
 **An API where most of the work is invisible: authentication, access control and data protection.**
 

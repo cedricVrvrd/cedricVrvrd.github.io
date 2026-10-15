@@ -5,8 +5,12 @@ date: 2022-06-28
 draft: false
 weight: 50
 summary: "Intégrer une maquette en partant du mobile, avec Sass et des animations en CSS pur : chargement, apparition des plats, effets au survol."
-tags: ["Projets", "OpenClassrooms", "Sass", "CSS"]
+categories: ["Développement web"]
+tags: ["OpenClassrooms", "Sass", "CSS"]
+showTaxonomies: true
 ---
+
+*Projet de la formation Développeur Web d'OpenClassrooms, 2022.*
 
 **Une maquette intégrée en partant du mobile, avec des animations en CSS pur, sans JavaScript.**
 

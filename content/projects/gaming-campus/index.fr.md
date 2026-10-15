@@ -5,10 +5,14 @@ date: 2022-11-30
 draft: false
 weight: 60
 summary: "Un exercice d'entraînement : reproduire en HTML et CSS la page d'accueil d'une école, avec Flexbox, Grid et une mise en page responsive."
-tags: ["Projets", "Exercice", "CSS"]
+categories: ["Développement web"]
+tags: ["Exercice", "CSS"]
+showTaxonomies: true
 ---
 
-**Un exercice d'entraînement : reproduire une page d'accueil en HTML et CSS.**
+*Exercice d'entraînement, 2022.*
+
+**Reproduire une page d'accueil en HTML et CSS, pour s'entraîner à la mise en page.**
 
 ## L'exercice
 

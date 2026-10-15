@@ -5,8 +5,12 @@ date: 2023-01-09
 draft: false
 weight: 70
 summary: "Un exercice court en JavaScript : créer des éléments à la volée, gérer les clics et animer les bulles en CSS."
-tags: ["Projets", "Exercice", "JavaScript"]
+categories: ["Développement web"]
+tags: ["Exercice", "JavaScript"]
+showTaxonomies: true
 ---
+
+*Exercice d'entraînement, 2023.*
 
 **Un mini-jeu en une trentaine de lignes de JavaScript : éclater des bulles avant qu'elles disparaissent.**
 

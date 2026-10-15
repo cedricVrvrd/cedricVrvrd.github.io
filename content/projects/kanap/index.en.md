@@ -5,8 +5,12 @@ date: 2022-09-30
 draft: false
 weight: 30
 summary: "Making an e-commerce site dynamic in plain JavaScript: catalogue loaded from an API, cart, form validation and checkout."
-tags: ["Projects", "OpenClassrooms", "JavaScript"]
+categories: ["Web development"]
+tags: ["OpenClassrooms", "JavaScript"]
+showTaxonomies: true
 ---
+
+*Project from the OpenClassrooms Web Developer path, 2022.*
 
 **A sofa shop website, made dynamic in plain JavaScript, no framework.**
 

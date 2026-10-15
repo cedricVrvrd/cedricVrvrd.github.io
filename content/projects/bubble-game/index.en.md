@@ -5,8 +5,12 @@ date: 2023-01-09
 draft: false
 weight: 70
 summary: "A short JavaScript exercise: creating elements on the fly, handling clicks and animating bubbles with CSS."
-tags: ["Projects", "Exercise", "JavaScript"]
+categories: ["Web development"]
+tags: ["Exercise", "JavaScript"]
+showTaxonomies: true
 ---
+
+*Practice exercise, 2023.*
 
 **A tiny game in about thirty lines of JavaScript: pop the bubbles before they disappear.**
 

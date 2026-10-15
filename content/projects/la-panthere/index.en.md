@@ -5,8 +5,12 @@ date: 2022-08-11
 draft: false
 weight: 40
 summary: "Taking over a web agency's website and fixing it: SEO, page weight, accessibility, and removing abusive SEO tricks."
-tags: ["Projects", "OpenClassrooms", "SEO", "Accessibility"]
+categories: ["Web development"]
+tags: ["OpenClassrooms", "SEO", "Accessibility"]
+showTaxonomies: true
 ---
+
+*Project from the OpenClassrooms Web Developer path, 2022.*
 
 **No new site here: take an existing one, find what's wrong, and fix it.**
 

@@ -5,10 +5,14 @@ date: 2022-11-30
 draft: false
 weight: 60
 summary: "A practice exercise: recreating a school's home page in HTML and CSS, with Flexbox, Grid and a responsive layout."
-tags: ["Projects", "Exercise", "CSS"]
+categories: ["Web development"]
+tags: ["Exercise", "CSS"]
+showTaxonomies: true
 ---
 
-**A practice exercise: recreate a home page in HTML and CSS.**
+*Practice exercise, 2022.*
+
+**Recreating a home page in HTML and CSS, to practise layout.**
 
 ## The exercise
 

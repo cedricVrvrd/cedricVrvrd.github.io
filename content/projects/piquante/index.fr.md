@@ -4,9 +4,13 @@ description: "API REST Node.js / Express / MongoDB pour une application d'avis s
 date: 2022-11-26
 draft: false
 weight: 10
-summary: "Le seul projet back-end du parcours, et le plus proche de ce que je fais aujourd'hui : une API Node.js où l'essentiel du travail porte sur la sécurité."
-tags: ["Projets", "OpenClassrooms", "Node.js", "Sécurité"]
+summary: "Le seul projet back-end de ma formation de développeur, et le plus proche de ce que je fais aujourd'hui : une API Node.js où l'essentiel du travail porte sur la sécurité."
+categories: ["Développement web"]
+tags: ["OpenClassrooms", "Node.js", "Sécurité"]
+showTaxonomies: true
 ---
+
+*Projet de la formation Développeur Web d'OpenClassrooms, 2022.*
 
 **Une API où l'essentiel du travail ne se voit pas : l'authentification, les contrôles d'accès et la protection des données.**
 

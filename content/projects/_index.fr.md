@@ -1,15 +1,20 @@
 ---
 title: "Projets"
-description: "Les projets de ma formation de développeur web, du plus complet au plus simple."
+description: "Ce que j'ai construit au fil de mon parcours : développement web, systèmes et réseaux, DevOps."
 orderByWeight: true
 groupByYear: false
 showSummary: true
 ---
 
-Avant les systèmes et réseaux, j'ai suivi le parcours **Développeur Web d'OpenClassrooms** (2022-2023), validé par le **titre professionnel Développeur Intégrateur Web (RNCP niveau 5)**. Chaque projet partait du cahier des charges d'une entreprise fictive : intégrer une maquette, optimiser un site existant, coder une interface dynamique, construire une API sécurisée.
+Mon parcours passe par plusieurs métiers : le **développement web**, puis les **systèmes et réseaux**, et aujourd'hui le **DevOps**, avec le cap sur le DevSecOps. Cette page rassemble les projets réalisés à chaque étape.
 
-Les projets sont classés du plus complet au plus simple. Les deux derniers sont de petits exercices d'entraînement de la même période.
+Pour chaque projet, vous trouverez :
 
-Toutes les démos sont en ligne sur GitHub Pages, sauf **Piquante** : c'est une API, qui a besoin d'un serveur et d'une base de données pour fonctionner. Son code reste consultable sur GitHub.
+- **son domaine**, indiqué par une étiquette ;
+- **son contexte** : projet de formation, exercice d'entraînement ou projet personnel ;
+- **ce que j'ai réellement réalisé**, et les technologies utilisées ;
+- le lien vers le **code**, et vers la **démo en ligne** quand le projet s'y prête.
 
-Ces projets datent de quelques années. Je les présente tels quels, comme les premières étapes de mon parcours.
+Certains projets datent de quelques années. Je les présente tels quels : ils montrent d'où je viens.
+
+Le projet au long cours, lui, a sa propre rubrique : [Heading North Lab](../heading-north-lab/).

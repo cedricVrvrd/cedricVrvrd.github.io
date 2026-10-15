@@ -5,8 +5,12 @@ date: 2022-06-28
 draft: false
 weight: 50
 summary: "Building a mock-up mobile first, with Sass and pure CSS animations: loading screen, dishes appearing, hover effects."
-tags: ["Projects", "OpenClassrooms", "Sass", "CSS"]
+categories: ["Web development"]
+tags: ["OpenClassrooms", "Sass", "CSS"]
+showTaxonomies: true
 ---
+
+*Project from the OpenClassrooms Web Developer path, 2022.*
 
 **A mock-up built mobile first, with pure CSS animations and no JavaScript.**
 

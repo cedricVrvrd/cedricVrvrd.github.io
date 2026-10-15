@@ -4,15 +4,19 @@ description: "A peer-to-peer home rental app built with React and React Router."
 date: 2022-11-26
 draft: false
 weight: 20
-summary: "The last project of the path: a home rental app in React, built from reusable components."
-tags: ["Projects", "OpenClassrooms", "React"]
+summary: "The last project of my web developer training: a home rental app in React, built from reusable components."
+categories: ["Web development"]
+tags: ["OpenClassrooms", "React"]
+showTaxonomies: true
 ---
+
+*Project from the OpenClassrooms Web Developer path, 2022.*
 
 **A home rental app, broken down into reusable components.**
 
 ## The brief
 
-Kasa is a peer-to-peer home rental platform. It was the last project of the path: build the front end in **React** from a mock-up, with one page per listing generated from the data.
+Kasa is a peer-to-peer home rental platform. It was the last project of the training: build the front end in **React** from a mock-up, with one page per listing generated from the data.
 
 ## What I built
 

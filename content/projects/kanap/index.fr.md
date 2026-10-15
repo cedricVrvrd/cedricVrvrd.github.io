@@ -5,8 +5,12 @@ date: 2022-09-30
 draft: false
 weight: 30
 summary: "Rendre dynamique un site e-commerce en JavaScript pur : catalogue chargé depuis une API, panier, validation du formulaire et commande."
-tags: ["Projets", "OpenClassrooms", "JavaScript"]
+categories: ["Développement web"]
+tags: ["OpenClassrooms", "JavaScript"]
+showTaxonomies: true
 ---
+
+*Projet de la formation Développeur Web d'OpenClassrooms, 2022.*
 
 **Un site de vente de canapés, rendu dynamique en JavaScript sans aucun framework.**
 
