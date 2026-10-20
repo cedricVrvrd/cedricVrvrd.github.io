@@ -1,8 +1,8 @@
 ---
 title: "Routers and ISP boxes: a Wi-Fi flaw some models will never fix"
 description: "Broadcom's old WPS module, found in routers and ISP boxes from many brands, can be exploited within radio range without the Wi-Fi password. Broadcom did not assign a CVE."
-date: 2026-10-22
-draft: true
+date: 2026-10-20
+draft: false
 summary: "A flaw in Broadcom's old WPS module affects routers and ISP boxes from many brands. It can be exploited within radio range, without the Wi-Fi password. No CVE, and no fix for some older models."
 tags: ["Tech Watch", "Networking", "Wi-Fi", "End of life"]
 ---

@@ -1,8 +1,8 @@
 ---
 title: "Box et routeurs : une faille Wi-Fi que certains modèles ne corrigeront jamais"
 description: "Le vieux module WPS de Broadcom, présent dans des box et routeurs de nombreuses marques, peut être exploité à portée radio sans le mot de passe Wi-Fi. Broadcom n'a pas attribué de CVE."
-date: 2026-10-22
-draft: true
+date: 2026-10-20
+draft: false
 summary: "Une faille dans le vieux module WPS de Broadcom touche des box et routeurs de nombreuses marques. Elle s'exploite à portée radio, sans le mot de passe Wi-Fi. Pas de CVE, et pas de correctif pour certains modèles anciens."
 tags: ["Tech Watch", "Réseau", "Wi-Fi", "Fin de support"]
 ---
