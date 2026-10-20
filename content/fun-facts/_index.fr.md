@@ -1,6 +1,6 @@
 ---
 title: "Friday Fun Facts"
-description: "Des anecdotes vraies et sourcées sur l'histoire de l'informatique et de la cybersécurité."
+description: "Des anecdotes vraies et sourcées sur la cybersécurité, le DevOps, les réseaux et le web."
 ---
 
-Chaque vendredi, une anecdote vraie et sourcée sur l'histoire de l'informatique et de la cybersécurité : un incident célèbre, l'origine d'un terme, une erreur historique. Avec, quand c'est possible, une leçon pour les défenseurs.
+Chaque vendredi, une anecdote vraie et sourcée sur la **cybersécurité, le DevOps, les réseaux** ou le **développement web** : un incident célèbre, l'origine d'un terme, une erreur historique. Avec, quand c'est possible, ce qu'on peut en retenir aujourd'hui.

@@ -4,7 +4,7 @@ description: "Comment une minuscule erreur comptable a mené un astronome jusqu'
 date: 2026-10-09
 draft: false
 summary: "En 1986, un écart de 75 centimes dans la facturation d'un laboratoire mène un astronome devenu administrateur système jusqu'à un pirate qui vendait des secrets au KGB."
-tags: ["Friday Fun Fact", "Blue Team", "Histoire", "Honeypot"]
+tags: ["Friday Fun Fact", "Cybersécurité", "Histoire", "Honeypot"]
 ---
 
 **75 centimes. C'est tout ce qui manquait sur une facture informatique. Et c'est ce qui a fait tomber un réseau d'espionnage.**
@@ -25,7 +25,7 @@ Stoll remarque que l'intrus s'intéresse au programme de défense antimissile «
 
 La piste mène en Allemagne de l'Ouest, jusqu'à Markus Hess, qui revendait le fruit de ses intrusions au KGB. Il est reconnu coupable d'espionnage en 1990.
 
-## La leçon pour un Blue Team
+## Ce qu'on en retient
 
 Une attaque se cache rarement dans une grosse alerte évidente. Elle se cache dans la petite anomalie que personne ne prend le temps d'expliquer. L'enquête de Stoll montre aussi la valeur de deux réflexes indispensables aujourd'hui :
 

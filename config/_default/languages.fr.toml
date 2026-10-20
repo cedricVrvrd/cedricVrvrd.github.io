@@ -10,7 +10,7 @@ title = "Heading North"
   isoCode = "fr"
   rtl = false
   dateFormat = "2 January 2006"
-  description = "Parcours homelab DevOps & Blue Team, construit en public."
+  description = "Parcours homelab DevOps, construit en public."
 
 [params.author]
   name = "Cédric VERVOORD"

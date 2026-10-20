@@ -30,7 +30,7 @@ The most interesting finding isn't the volume, it's the cause. Survival depends 
 
 Push protection roughly halved the rate at which covered secrets reach public code. But, as the researchers put it, it "did not change what happens to a credential once it is there". And about half of live credentials are types that push protection does not block by default.
 
-## What defenders should take away
+## What to take away
 
 - **A published secret is compromised**, even if you delete the commit a minute later. Rotate it first, clean the history second.
 - **Blocking future leaks doesn't fix past ones.** Scan your repositories' full history, especially anything committed before February 2024.

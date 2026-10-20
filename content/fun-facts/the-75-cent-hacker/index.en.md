@@ -4,7 +4,7 @@ description: "How a tiny accounting error led an astronomer to a KGB-backed spy 
 date: 2026-10-09
 draft: false
 summary: "In 1986, a 75-cent gap in a lab's billing led an astronomer turned sysadmin to a hacker selling secrets to the KGB."
-tags: ["Friday Fun Fact", "Blue Team", "History", "Honeypot"]
+tags: ["Friday Fun Fact", "Cybersecurity", "History", "Honeypot"]
 ---
 
 **75 cents. That's all that was missing from a computer bill — and it brought down a spy ring.**
@@ -25,9 +25,9 @@ Stoll noticed that the intruder was interested in the "Star Wars" missile defens
 
 The trail led to West Germany and to Markus Hess, who had been selling the results of his intrusions to the KGB. He was convicted of espionage in 1990.
 
-## The Blue Team lesson
+## The takeaway
 
-Attacks rarely hide in big, obvious alerts. They hide in small anomalies that nobody takes the time to explain. Stoll's investigation also shows the value of two habits every defender needs today:
+Attacks rarely hide in big, obvious alerts. They hide in small anomalies that nobody takes the time to explain. Stoll's investigation also shows the value of two habits that still matter today:
 
 - **Keep and read your logs.** Without the accounting records, there would have been no gap to notice.
 - **Document everything.** Stoll's logbook made it possible to understand the attacker's methods and, later, to prove what happened.

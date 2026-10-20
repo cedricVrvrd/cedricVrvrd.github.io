@@ -30,7 +30,7 @@ Le résultat le plus intéressant n'est pas le volume, c'est la cause. La survie
 
 Le blocage des secrets a réduit environ de moitié la fréquence à laquelle les secrets concernés arrivent dans du code public. Mais, comme l'écrivent les chercheurs, il « n'a rien changé à ce qui arrive à un identifiant une fois qu'il est publié ». Et environ la moitié des identifiants encore valides sont de types que ce blocage ne couvre pas par défaut.
 
-## Ce qu'un défenseur doit en retenir
+## Ce qu'il faut en retenir
 
 - **Un secret publié est compromis**, même si le commit est supprimé une minute après. On le change d'abord, on nettoie l'historique ensuite.
 - **Bloquer les fuites futures ne règle pas celles du passé.** Il faut scanner tout l'historique de ses dépôts, en particulier ce qui a été publié avant février 2024.

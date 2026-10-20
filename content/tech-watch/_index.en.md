@@ -1,6 +1,6 @@
 ---
 title: "Tech Watch"
-description: "A weekly, sourced look at what's happening in IT and cybersecurity — and what it means for defenders."
+description: "A weekly, verified and sourced piece of news in cybersecurity, DevOps or networking, and what it changes in practice."
 ---
 
-Every week, one piece of IT or cybersecurity news, verified and sourced, with three questions: what happened, why it matters, and what a defender should take away from it.
+Every week, one piece of news in **cybersecurity, DevOps or networking**, sometimes web development, verified and sourced, with three questions: what happened, why it matters, and what to take away from it in practice.
