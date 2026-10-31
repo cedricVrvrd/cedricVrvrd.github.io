@@ -19,6 +19,11 @@
   weight = 20
 
 [[main]]
+  name = "CTF Write-ups"
+  pageRef = "ctf-writeups"
+  weight = 25
+
+[[main]]
   name = "Friday Fun Facts"
   pageRef = "fun-facts"
   weight = 30
