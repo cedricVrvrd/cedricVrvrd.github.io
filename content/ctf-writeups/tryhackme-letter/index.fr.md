@@ -2,55 +2,82 @@
 title: "TryHackMe — Letter : une enquête OSINT à partir d'une lettre abîmée"
 date: 2026-11-04
 draft: false
-description: "Write-up de la room Letter (TryHackMe) : retrouver une personne à partir d'une note manuscrite et d'une coupure de presse endommagée. La méthode, avec les captures de mon enquête."
-summary: "Une enveloppe trempée, une coupure de journal déchirée, une note personnelle : comment je procède en OSINT pour remonter jusqu'à une personne précise. Ma méthode, avec les documents sur lesquels je me suis appuyé."
+description: "Write-up de la room Letter (TryHackMe) : retrouver une personne à partir d'une note manuscrite et d'une coupure de presse endommagée. Ma démarche, réponses et indices masqués."
+summary: "Une enveloppe trempée, une coupure de journal déchirée, une note personnelle : ma démarche pas à pas pour remonter jusqu'à une personne précise. Réponses et indices masqués."
 tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 ---
 
-## La room en deux mots
+**Letter** est un CTF basé sur l'**OSINT** (renseignement en sources ouvertes).
 
-**Letter** est un challenge OSINT (renseignement en sources ouvertes) de TryHackMe. Le scénario : vous êtes facteur, un lundi matin, et une enveloppe en piteux état attire votre attention. Elle est trouée, détrempée, l'adresse est presque illisible, et vos collègues la classent comme courrier perdu. Quelque chose vous intrigue quand même. À l'intérieur : une coupure de journal abîmée, dont des passages entiers manquent, et une courte note manuscrite, clairement personnelle.
+> **Réponses et indices masqués.** Pour ne pas gâcher la room à ceux qui la font encore, les indices, les réponses et les captures qui les révèlent sont masqués ou floutés. Seule la démarche reste lisible.
 
-**Objectif** : à partir des éléments du fichier zip, retrouver le **nom complet et l'âge** de la personne dont parle la note. Le flag suit un format imposé : `THM{Prénom_Nom_âge}`, avec une majuscule initiale seulement.
+## L'énoncé
 
-> **Pas de flag en clair.** Les règles de TryHackMe interdisent de publier flags, réponses et walkthroughs pas à pas pour les rooms encore actives. Je décris donc ma démarche sans écrire le flag ; les captures montrent les documents sur lesquels je me suis appuyé.
+> C'est un lundi matin comme un autre sur ta tournée de facteur quand une lettre inhabituelle attire ton regard. L'enveloppe est cabossée, criblée de trous, comme si elle avait traversé une tempête. L'adresse est à peine lisible, et tes collègues du bureau de poste la considèrent comme perdue d'avance.
+>
+> Mais quelque chose te chiffonne. Tu ouvres avec précaution l'enveloppe humide. À l'intérieur : une coupure de journal fanée et une courte note manuscrite. La coupure est déchirée et abîmée par l'eau, des passages clés manquent. La note est personnelle, clairement pas destinée à tes yeux, mais les fragments lisibles évoquent une histoire enfouie dans le temps.
 
-## Les pièces du dossier
+**Objectif** : utiliser les indices du fichier zip pour retrouver le **nom complet et l'âge** de la personne mentionnée dans la note.
 
-- **La note** : un message affectueux adressé à un proche. Elle contient surtout deux indices sur la personne recherchée : un indice lié à son âge, un autre à sa place au sein d'un groupe.
-- **La coupure de presse** : le titre du journal est lisible, plusieurs titres d'articles le sont partiellement, et l'article central est très endommagé.
-- **L'enveloppe** : trop abîmée pour livrer quoi que ce soit d'exploitable de mon côté.
+**Format du flag** : `THM{Prénom_Nom_âge}`, seules les premières lettres du prénom et du nom en majuscule.
+Exemple : `THM{Pierre-Henry_Lagaffe_23}`
 
-{{< figure src="02-enveloppe.jpg" alt="Enveloppe trempée et trouée, adresse illisible" caption="L'enveloppe, très abîmée : rien d'exploitable." >}}
+## La lettre
 
-{{< figure src="01-journal-titres.jpg" alt="Bandeau et titres de la coupure de presse" caption="Le bandeau du journal et les titres lisibles de la coupure." >}}
+Je télécharge le fichier. Dedans, on trouve une lettre :
 
-## Ma méthode
+> *Mon cher Édouard,*
+>
+> *Aujourd'hui, en rangeant le grenier chez mes grands-parents, je suis tombée sur cette vieille coupure de journal. **[passage masqué : deux indices sur la personne recherchée]***
+>
+> *Il serait si fier de te voir **[masqué]** à ton tour.*
+>
+> *Avec toute mon affection,*
+> *Audette*
 
-1. **Tout inventorier avant de chercher.** Je relis la consigne, la note, la coupure et l'enveloppe, et je note ce qui est certain, ce qui est partiel et ce qui est seulement suggéré.
-2. **Transformer la note en filtres.** Les deux indices de la note ne servent pas à chercher : ils servent à **départager** plus tard les candidats. Je les mets de côté, en les formulant comme des critères vérifiables.
-3. **Trouver le pivot le plus solide de la coupure.** Un document abîmé ne se reconstitue pas directement. Ce qui est lisible (le nom du journal, un mot-clé thématique, une zone géographique) sert de point d'appui pour retrouver l'article d'origine ailleurs.
-4. **Chercher avec peu de mots, mais les bons.** Quelques mots-clés bien choisis, issus de ce qui est lisible, m'ont mené à une page d'histoire locale qui reproduit l'article original.
-5. **Passer de l'événement aux personnes.** Une fois l'événement identifié, je cherche une source qui liste les personnes concernées avec leur âge.
-6. **Appliquer les filtres de la note.** Parmi ces personnes, un seul profil satisfait les deux critères posés à l'étape 2.
-7. **Contrôler le format avant de valider.** Orthographe exacte du nom comme sur la source, tirets, majuscules, ordre des éléments : le format du flag est strict.
+**Indices intéressants :**
 
-## Les documents retrouvés
+- **[indice masqué]**
+- **[indice masqué]**
 
-{{< figure src="03-article-original.jpg" alt="Article de presse original retrouvé" caption="L'article original, retrouvé sur une page d'histoire locale." >}}
+## L'article
 
-{{< figure src="04-equipages.jpg" alt="Liste des équipages avec noms, âges et médailles" caption="La liste des équipages, avec les âges. Capture d'une [page d'histoire locale](https://www.kbcpenmarch.franceserv.com/la-catastrophe-du-23-mai-1925-selon-la-presse-locale.html) : tous droits réservés à son auteur." >}}
+Je regarde de plus près la coupure de presse.
+
+{{< figure src="01-journal-floute.jpg" alt="Bandeau et titres de la coupure de presse, floutés" caption="Le haut de la coupure (flouté : il contient des indices)." >}}
+
+Il s'agit d'un journal **[masqué]**. Un des articles est très abîmé : ce doit être celui qui nous concerne. On y lit des titres qui pourraient aider à retrouver l'œuvre originale. Sur l'article du milieu, on distingue **[mots-clés masqués]**.
+
+## L'enveloppe
+
+Je jette un œil à l'enveloppe du fichier.
+
+{{< figure src="02-enveloppe.jpg" alt="Enveloppe trempée et trouée, adresse illisible" caption="L'enveloppe, très abîmée." >}}
+
+Rien d'intéressant dessus : tout est abîmé.
+
+## La recherche
+
+Je commence par une recherche avec les mots-clés **[masqués]**. Je tombe sur un site qui raconte l'histoire de cet événement et reproduit l'article correspondant **[lien masqué]**.
+
+{{< figure src="03-article-floute.jpg" alt="Article de presse original, flouté" caption="L'article original retrouvé (flouté)." >}}
+
+Dans l'article original, je trouve le lieu : **[masqué]**, code postal **[masqué]** (première réponse de la room).
+
+## Les candidats
+
+Le site contient aussi une liste de personnes avec leur âge. En appliquant les indices de la lettre, un seul profil correspond : **[masqué]**, **[masqué]** ans.
+
+{{< figure src="04-equipages-floute.jpg" alt="Liste de personnes avec noms et âges, floutée" caption="La liste (floutée : elle contient la réponse)." >}}
+
+**Réponse** : `THM{██████_██████_██}`
 
 ## Ce que j'en retiens
 
-- **Un indice sert à chercher, l'autre à départager.** Distinguer les deux évite de se perdre dans les résultats.
-- **Partir de ce qui est lisible.** Face à un document dégradé, inutile de deviner le contenu manquant : on cherche l'original.
-- **Les sources locales sont précieuses, mais ne se suffisent pas.** Une page d'histoire locale peut contenir exactement le détail recherché ; elle reste une source parmi d'autres, à citer et à recouper dès que c'est possible.
-- **Le détail du format compte.** Casse, tirets, ordre : en OSINT comme en administration système, une petite erreur de forme suffit à invalider un résultat correct.
-- **L'éthique ne s'arrête pas au CTF.** Ici, l'enquête porte sur des faits historiques. Dans un contexte réel, identifier une personne vivante à partir de sources ouvertes pose de vraies questions de vie privée et de légitimité.
-
-## Compétences mobilisées
-
-Analyse de documents, recherche avancée, corrélation de sources, rigueur dans la vérification.
+- **Un indice sert à chercher, l'autre à départager.** Les séparer évite de se perdre dans les résultats.
+- **Partir de ce qui est lisible.** Face à un document dégradé, on ne devine pas le contenu manquant : on cherche l'original.
+- **Passer de l'événement aux personnes.** Une fois l'événement identifié, une liste nominative avec les âges permet de filtrer.
+- **Les sources locales sont précieuses, mais ne se suffisent pas.** Elles restent une source parmi d'autres, à recouper dès que c'est possible.
+- **Le format compte.** Casse, tirets, ordre : une petite erreur de forme invalide un résultat correct.
 
 *Room « Letter », TryHackMe.*

@@ -2,55 +2,84 @@
 title: "TryHackMe — Letter: an OSINT investigation from a damaged letter"
 date: 2026-11-04
 draft: false
-description: "Write-up of the TryHackMe Letter room: tracking down a person from a handwritten note and a damaged newspaper clipping. The method, with screenshots of my investigation."
-summary: "A soaked envelope, a torn newspaper clipping, a personal note: how I approach an OSINT puzzle to end up at one specific person. My method, with the documents I relied on."
+description: "Write-up of the TryHackMe Letter room: tracking down a person from a handwritten note and a damaged newspaper clipping. My approach, with answers and clues masked."
+summary: "A soaked envelope, a torn newspaper clipping, a personal note: my step-by-step approach to end up at one specific person. Answers and clues masked."
 tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 ---
 
-## The room in a nutshell
+**Letter** is an **OSINT** (open-source intelligence) CTF.
 
-**Letter** is an OSINT (open-source intelligence) challenge on TryHackMe. You play a mail carrier on an ordinary Monday morning. One envelope catches your eye: it is battered, full of holes, the address is barely legible, and your colleagues write it off as lost mail. Something about it nags at you anyway. Inside, you find a damaged newspaper clipping with whole sections missing, and a short handwritten note that is clearly personal.
+> **Answers and clues masked.** So as not to spoil the room for those still working on it, the clues, the answers and the screenshots that reveal them are masked or blurred. Only the approach is left readable.
 
-**Objective**: using the clues in the zip file, find the **full name and age** of the person mentioned in the note. The flag has a fixed format, `THM{Name_Surname_age}`, with only the first letters capitalised.
+## The brief
 
-> **No flag in plain text.** TryHackMe's rules do not allow publishing flags, answers or step-by-step walkthroughs for rooms that are still active. So I describe my approach without writing out the flag; the screenshots show the documents I relied on.
+> It's just another Monday morning on your mail delivery route when an unusual letter catches your eye. The envelope is battered, riddled with holes as if it's been through a storm. The address is barely legible, and your coworkers at the post office wave it off as a lost cause.
+>
+> But something about it nags at you.
+>
+> You carefully open the damp envelope. Inside, you find a faded newspaper clipping and a short handwritten note. The clipping is torn and water-damaged, with key sections missing. The note is personal, clearly not meant for your eyes, but the fragments you can read hint at a story buried in time.
 
-## What's in the file
+**Objective**: use the clues provided in the zip file to uncover the full name and age of the person mentioned in the note.
 
-- **The note**: an affectionate message to a relative. Its real value is two clues about the person being sought: one related to their age, one related to their place within a group.
-- **The newspaper clipping**: the paper's name is readable, several headlines are partly readable, and the central article is badly damaged.
-- **The envelope**: too damaged to give me anything usable.
+**Flag format**: `THM{Name_Surname_age}`, only the first letter of the name and surname should be capitalised.
+Example: `THM{Pierre-Henry_Lagaffe_23}`
 
-{{< figure src="02-enveloppe.jpg" alt="Soaked, holed envelope with an illegible address" caption="The envelope, badly damaged: nothing usable." >}}
+## The letter
 
-{{< figure src="01-journal-titres.jpg" alt="Masthead and headlines of the newspaper clipping" caption="The paper's masthead and the readable headlines of the clipping." >}}
+I download the file. Inside is a letter (in French, translated here):
 
-## My method
+> *My dear Édouard,*
+>
+> *Today, while tidying the attic at my grandparents' house, I came across this old newspaper clipping. **[passage masked: two clues about the person being sought]***
+>
+> *He would be so proud to see you **[masked]** in your turn.*
+>
+> *With all my love,*
+> *Audette*
 
-1. **Take inventory before searching.** I re-read the brief, the note, the clipping and the envelope, and write down what is certain, what is partial and what is only hinted at.
-2. **Turn the note into filters.** The note's two clues are not for searching: they are for **telling candidates apart** later. I set them aside as checkable criteria.
-3. **Find the most solid anchor in the clipping.** You cannot rebuild a damaged document directly. What is readable (the paper's name, a thematic keyword, a geographic area) becomes a foothold to find the original article elsewhere.
-4. **Search with few words, but the right ones.** A handful of well-chosen keywords, taken from what was readable, led me to a local-history page reproducing the original article.
-5. **Go from the event to the people.** Once the event is identified, I look for a source listing the people involved along with their ages.
-6. **Apply the note's filters.** Among those people, only one profile satisfies both criteria set in step 2.
-7. **Check the format before submitting.** Exact spelling of the name as it appears in the source, hyphens, capitalisation, order of elements: the flag format is strict.
+**Interesting clues:**
 
-## The documents I found
+- **[clue masked]**
+- **[clue masked]**
 
-{{< figure src="03-article-original.jpg" alt="Original newspaper article found online" caption="The original article, found on a local-history page." >}}
+## The article
 
-{{< figure src="04-equipages.jpg" alt="Crew list with names, ages and medals" caption="The crew list, with ages. Screenshot of a [local-history page](https://www.kbcpenmarch.franceserv.com/la-catastrophe-du-23-mai-1925-selon-la-presse-locale.html) (in French): all rights reserved to its author." >}}
+I take a closer look at the clipping.
+
+{{< figure src="01-journal-floute.jpg" alt="Masthead and headlines of the newspaper clipping, blurred" caption="The top of the clipping (blurred: it contains clues)." >}}
+
+It is a **[masked]** newspaper. One of the articles is badly damaged: it must be the one that matters. Some headlines are readable and could help me find the original piece. On the middle article, I can make out **[keywords masked]**.
+
+## The envelope
+
+I have a look at the envelope from the file.
+
+{{< figure src="02-enveloppe.jpg" alt="Soaked, holed envelope with an illegible address" caption="The envelope, badly damaged." >}}
+
+Nothing of interest: it is all damaged.
+
+## The search
+
+I start with a search using the keywords **[masked]**. I land on a site telling the story of this event and reproducing the matching article **[link masked]**.
+
+{{< figure src="03-article-floute.jpg" alt="Original newspaper article, blurred" caption="The original article I found (blurred)." >}}
+
+In the original article I find the place: **[masked]**, postcode **[masked]** (the room's first answer).
+
+## The candidates
+
+The site also has a list of people with their ages. Applying the letter's clues, only one profile fits: **[masked]**, **[masked]** years old.
+
+{{< figure src="04-equipages-floute.jpg" alt="List of people with names and ages, blurred" caption="The list (blurred: it contains the answer)." >}}
+
+**Answer**: `THM{██████_██████_██}`
 
 ## What I took from it
 
 - **One clue to search, one to tell candidates apart.** Separating the two keeps you from drowning in results.
-- **Start from what is readable.** With a degraded document, don't guess the missing content: look for the original.
-- **Local sources are valuable, but not enough on their own.** A local-history page can hold exactly the detail you need; it is still one source among others, to be cited and cross-checked whenever possible.
-- **Format details matter.** Capitalisation, hyphens, ordering: in OSINT as in system administration, a small formatting slip can invalidate a correct result.
-- **Ethics don't stop at the CTF.** Here the investigation is about historical events. In a real setting, identifying a living person from open sources raises genuine privacy and legitimacy questions.
-
-## Skills used
-
-Document analysis, advanced searching, source correlation, careful verification.
+- **Start from what is readable.** With a degraded document, you don't guess the missing content: you look for the original.
+- **Go from the event to the people.** Once the event is identified, a named list with ages lets you filter.
+- **Local sources are valuable, but not enough on their own.** They remain one source among others, to be cross-checked whenever possible.
+- **Format matters.** Capitalisation, hyphens, order: a small formatting slip invalidates a correct result.
 
 *TryHackMe room "Letter".*
