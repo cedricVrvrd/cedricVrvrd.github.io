@@ -2,8 +2,8 @@
 title: "TryHackMe — Letter: an OSINT investigation from a damaged letter"
 date: 2026-11-04
 draft: false
-description: "Write-up of the TryHackMe Letter room: tracking down a person from a handwritten note and a damaged newspaper clipping. The method, no spoilers."
-summary: "A soaked envelope, a torn newspaper clipping, a personal note: how I approach an OSINT puzzle to end up at one specific person. The method, not the answer."
+description: "Write-up of the TryHackMe Letter room: tracking down a person from a handwritten note and a damaged newspaper clipping. The method, with screenshots of my investigation."
+summary: "A soaked envelope, a torn newspaper clipping, a personal note: how I approach an OSINT puzzle to end up at one specific person. My method, with the documents I relied on."
 tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 ---
 
@@ -13,13 +13,17 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 
 **Objective**: using the clues in the zip file, find the **full name and age** of the person mentioned in the note. The flag has a fixed format, `THM{Name_Surname_age}`, with only the first letters capitalised.
 
-> **Why no flag here?** TryHackMe's rules do not allow publishing flags, answers or step-by-step walkthroughs for rooms that are still active. So this article covers my **approach** and what I took from it. It does not give the answer, nor the names, places or dates that would let you guess it.
+> **No flag in plain text.** TryHackMe's rules do not allow publishing flags, answers or step-by-step walkthroughs for rooms that are still active. So I describe my approach without writing out the flag; the screenshots show the documents I relied on.
 
 ## What's in the file
 
 - **The note**: an affectionate message to a relative. Its real value is two clues about the person being sought: one related to their age, one related to their place within a group.
 - **The newspaper clipping**: the paper's name is readable, several headlines are partly readable, and the central article is badly damaged.
 - **The envelope**: too damaged to give me anything usable.
+
+{{< figure src="02-enveloppe.jpg" alt="Soaked, holed envelope with an illegible address" caption="The envelope, badly damaged: nothing usable." >}}
+
+{{< figure src="01-journal-titres.jpg" alt="Masthead and headlines of the newspaper clipping" caption="The paper's masthead and the readable headlines of the clipping." >}}
 
 ## My method
 
@@ -31,6 +35,12 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 6. **Apply the note's filters.** Among those people, only one profile satisfies both criteria set in step 2.
 7. **Check the format before submitting.** Exact spelling of the name as it appears in the source, hyphens, capitalisation, order of elements: the flag format is strict.
 
+## The documents I found
+
+{{< figure src="03-article-original.jpg" alt="Original newspaper article found online" caption="The original article, found on a local-history page." >}}
+
+{{< figure src="04-equipages.jpg" alt="Crew list with names, ages and medals" caption="The crew list, with ages. Screenshot of a [local-history page](https://www.kbcpenmarch.franceserv.com/la-catastrophe-du-23-mai-1925-selon-la-presse-locale.html) (in French): all rights reserved to its author." >}}
+
 ## What I took from it
 
 - **One clue to search, one to tell candidates apart.** Separating the two keeps you from drowning in results.
@@ -41,6 +51,6 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 
 ## Skills used
 
-Document analysis, advanced searching, source correlation, careful verification, respect for the platform's rules.
+Document analysis, advanced searching, source correlation, careful verification.
 
 *TryHackMe room "Letter".*

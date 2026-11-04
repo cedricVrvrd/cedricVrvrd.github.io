@@ -2,8 +2,8 @@
 title: "TryHackMe — Letter : une enquête OSINT à partir d'une lettre abîmée"
 date: 2026-11-04
 draft: false
-description: "Write-up de la room Letter (TryHackMe) : retrouver une personne à partir d'une note manuscrite et d'une coupure de presse endommagée. La méthode, sans spoiler."
-summary: "Une enveloppe trempée, une coupure de journal déchirée, une note personnelle : comment je procède en OSINT pour remonter jusqu'à une personne précise. La méthode, pas la réponse."
+description: "Write-up de la room Letter (TryHackMe) : retrouver une personne à partir d'une note manuscrite et d'une coupure de presse endommagée. La méthode, avec les captures de mon enquête."
+summary: "Une enveloppe trempée, une coupure de journal déchirée, une note personnelle : comment je procède en OSINT pour remonter jusqu'à une personne précise. Ma méthode, avec les documents sur lesquels je me suis appuyé."
 tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 ---
 
@@ -13,13 +13,17 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 
 **Objectif** : à partir des éléments du fichier zip, retrouver le **nom complet et l'âge** de la personne dont parle la note. Le flag suit un format imposé : `THM{Prénom_Nom_âge}`, avec une majuscule initiale seulement.
 
-> **Pourquoi pas de flag ici ?** Les règles de TryHackMe interdisent de publier flags, réponses et walkthroughs pas à pas pour les rooms encore actives. Cet article décrit donc ma **démarche** et ce que j'en retiens. Il ne donne ni la réponse, ni les noms, lieux ou dates qui permettraient de la deviner.
+> **Pas de flag en clair.** Les règles de TryHackMe interdisent de publier flags, réponses et walkthroughs pas à pas pour les rooms encore actives. Je décris donc ma démarche sans écrire le flag ; les captures montrent les documents sur lesquels je me suis appuyé.
 
 ## Les pièces du dossier
 
 - **La note** : un message affectueux adressé à un proche. Elle contient surtout deux indices sur la personne recherchée : un indice lié à son âge, un autre à sa place au sein d'un groupe.
 - **La coupure de presse** : le titre du journal est lisible, plusieurs titres d'articles le sont partiellement, et l'article central est très endommagé.
 - **L'enveloppe** : trop abîmée pour livrer quoi que ce soit d'exploitable de mon côté.
+
+{{< figure src="02-enveloppe.jpg" alt="Enveloppe trempée et trouée, adresse illisible" caption="L'enveloppe, très abîmée : rien d'exploitable." >}}
+
+{{< figure src="01-journal-titres.jpg" alt="Bandeau et titres de la coupure de presse" caption="Le bandeau du journal et les titres lisibles de la coupure." >}}
 
 ## Ma méthode
 
@@ -31,6 +35,12 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 6. **Appliquer les filtres de la note.** Parmi ces personnes, un seul profil satisfait les deux critères posés à l'étape 2.
 7. **Contrôler le format avant de valider.** Orthographe exacte du nom comme sur la source, tirets, majuscules, ordre des éléments : le format du flag est strict.
 
+## Les documents retrouvés
+
+{{< figure src="03-article-original.jpg" alt="Article de presse original retrouvé" caption="L'article original, retrouvé sur une page d'histoire locale." >}}
+
+{{< figure src="04-equipages.jpg" alt="Liste des équipages avec noms, âges et médailles" caption="La liste des équipages, avec les âges. Capture d'une [page d'histoire locale](https://www.kbcpenmarch.franceserv.com/la-catastrophe-du-23-mai-1925-selon-la-presse-locale.html) : tous droits réservés à son auteur." >}}
+
 ## Ce que j'en retiens
 
 - **Un indice sert à chercher, l'autre à départager.** Distinguer les deux évite de se perdre dans les résultats.
@@ -41,6 +51,6 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 
 ## Compétences mobilisées
 
-Analyse de documents, recherche avancée, corrélation de sources, rigueur dans la vérification, respect des règles de la plateforme.
+Analyse de documents, recherche avancée, corrélation de sources, rigueur dans la vérification.
 
 *Room « Letter », TryHackMe.*
