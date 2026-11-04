@@ -43,4 +43,4 @@ tags: ["CTF", "TryHackMe", "OSINT", "Write-up"]
 
 Analyse de documents, recherche avancée, corrélation de sources, rigueur dans la vérification, respect des règles de la plateforme.
 
-*Room « Letter », TryHackMe.
+*Room « Letter », TryHackMe.*
