@@ -2,7 +2,7 @@
 title: "WordPress : la mise à jour elle-même ouvrait une porte"
 description: "WordPress 7.1.4 corrige une faille de condition de concurrence dans le processus de mise à jour du cœur, exploitable sans compte. La CISA l'a ajoutée à son catalogue des failles exploitées le 3 novembre."
 date: 2026-11-05
-draft: true
+draft: false
 summary: "Pendant quelques secondes, à chaque mise à jour, une copie de WordPress restait à une adresse prévisible. Des attaquants guettaient ce moment. La faille est corrigée dans WordPress 7.1.4 et la CISA la classe comme exploitée."
 tags: ["Tech Watch", "Développement web", "WordPress", "Mises à jour"]
 ---
