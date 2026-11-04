@@ -1,7 +1,7 @@
 ---
 title: "WordPress: the update itself left a door open"
 description: "WordPress 7.1.4 fixes a race condition in the core update process, exploitable without an account. CISA added it to its Known Exploited Vulnerabilities catalog on 3 November."
-date: 2026-11-05
+date: 2026-11-04
 draft: false
 summary: "For a few seconds during every update, a copy of WordPress sat at a predictable address. Attackers were watching for that moment. The flaw is fixed in WordPress 7.1.4 and CISA lists it as exploited."
 tags: ["Tech Watch", "Web development", "WordPress", "Updates"]
