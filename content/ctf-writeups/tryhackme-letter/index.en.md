@@ -82,4 +82,4 @@ The site also has a list of people with their ages. Applying the letter's clues,
 - **Local sources are valuable, but not enough on their own.** They remain one source among others, to be cross-checked whenever possible.
 - **Format matters.** Capitalisation, hyphens, order: a small formatting slip invalidates a correct result.
 
-*TryHackMe room "Letter".*
+*TryHackMe room [“Letter”](https://tryhackme.com/room/letter).*

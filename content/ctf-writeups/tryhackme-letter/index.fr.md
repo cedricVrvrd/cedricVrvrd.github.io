@@ -80,4 +80,4 @@ Le site contient aussi une liste de personnes avec leur âge. En appliquant les 
 - **Les sources locales sont précieuses, mais ne se suffisent pas.** Elles restent une source parmi d'autres, à recouper dès que c'est possible.
 - **Le format compte.** Casse, tirets, ordre : une petite erreur de forme invalide un résultat correct.
 
-*Room « Letter », TryHackMe.*
+*Room [« Letter »](https://tryhackme.com/room/letter), TryHackMe.*
