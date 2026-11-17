@@ -53,11 +53,11 @@ Un poste de la Direction ne doit pas joindre un poste des Employés, et inversem
 
 ![Ping du poste Direction vers un poste Employés : aucune réponse](07-ping-direction-vers-employes.png)
 
-Dans les deux cas, aucune réponse : c'est ce que prévoient les règles de pfSense.
+Dans les deux cas, aucune réponse. Mais un ping sans réponse ne prouve pas, à lui seul, que c'est pfSense qui refuse : Windows bloque aussi les pings entrants par défaut. La preuve est dans le journal du pare-feu (`Status > System Logs > Firewall`) :
 
-{{< alert icon="circle-info" >}}
-**Limite du test.** Windows bloque aussi les pings entrants par défaut. Un ping sans réponse ne prouve donc pas, à lui seul, que c'est pfSense qui a refusé. La preuve la plus solide est la ligne de blocage dans le journal du pare-feu (`Status > System Logs > Firewall`).
-{{< /alert >}}
+![Le journal de pfSense : les connexions entre le VLAN 10 et le VLAN 30 sont bloquées par la règle « BLOCK TO INTERNAL »](06b-journal-pare-feu.png)
+
+Chaque ligne rouge est une connexion refusée par la règle `BLOCK TO INTERNAL` de la zone Employés ou de la zone Direction, entre `10.0.30.100` et `10.0.10.100`. Détail amusant : ce ne sont pas mes pings, mais des tentatives de connexion sur le port 7680, que Windows utilise pour partager ses mises à jour entre postes voisins. Sans que je fasse rien, les deux postes essaient de se parler, et pfSense les bloque.
 
 ## Les sauvegardes
 

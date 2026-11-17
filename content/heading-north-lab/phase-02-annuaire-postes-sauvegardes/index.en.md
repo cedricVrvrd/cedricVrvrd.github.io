@@ -53,11 +53,11 @@ A Management PC must not reach a Staff PC, and the other way round. I test a pin
 
 ![Ping from the Management PC to a Staff PC: no reply](07-ping-direction-vers-employes.png)
 
-Both times, no reply: that is what the pfSense rules are meant to do.
+Both times, no reply. But a ping with no reply does not, on its own, prove that pfSense refused it: Windows also blocks incoming pings by default. The proof is in the firewall log (`Status > System Logs > Firewall`):
 
-{{< alert icon="circle-info" >}}
-**Limit of the test.** Windows also blocks incoming pings by default. A ping with no reply does not, on its own, prove that pfSense refused it. The strongest proof is the block line in the firewall log (`Status > System Logs > Firewall`).
-{{< /alert >}}
+![The pfSense log: connections between VLAN 10 and VLAN 30 are blocked by the "BLOCK TO INTERNAL" rule](06b-journal-pare-feu.png)
+
+Each red line is a connection refused by the `BLOCK TO INTERNAL` rule of the Staff or Management zone, between `10.0.30.100` and `10.0.10.100`. A fun detail: these are not my pings, but connection attempts on port 7680, which Windows uses to share updates between nearby PCs. Without me doing anything, the two PCs try to talk to each other, and pfSense blocks them.
 
 ## The backups
 
